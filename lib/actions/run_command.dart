@@ -33,21 +33,14 @@ class RunCommandAction implements Action {
     final yamlCommand = YamlManager.readerYamlCommandsFile(
             normalize('$yamlCommandPath/commands.yaml'))
         .firstWhere((yamlCommand) => yamlCommand.key == commandName);
-    //flutter pub add velocity_x && pub add get ** mbc responsive --name services**npm responsive --name services
-    //**  flutter pub add velocity_x&&pub add get   mbc responsive --name services npm responsive --name services
 
     for (var envCmd in yamlCommand.command.trim().split(' ** ')) {
       // env splitter
       final splited = envCmd.split(' ');
-      logger.d('yamlCommand:$envCmd');
       final name = splited[0];
-      logger.d('name:$name');
       final splited2 =
           envCmd.replaceFirst(name, '').trim().split(' && '); // cmd splitter
-      //velo: flutter pub add velocity_x && flutter pub add get
-      logger.d('splt2:$splited2');
       for (var cmd in splited2) {
-        logger.d('cmd:$cmd');
         final cmdList = cmd.split(' ');
         await FastProcessCLI()
             .executeProcess(name, cmdList, workingDirectory.path);

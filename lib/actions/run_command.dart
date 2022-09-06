@@ -43,7 +43,7 @@ class RunCommandAction implements Action {
       final name = splited[0];
       logger.d('name:$name');
       final splited2 =
-          envCmd.replaceAll(name, '').trim().split(' && '); // cmd splitter
+          envCmd.replaceFirst(name, '').trim().split(' && '); // cmd splitter
       //velo: flutter pub add velocity_x && flutter pub add get
       logger.d('splt2:$splited2');
       for (var cmd in splited2) {

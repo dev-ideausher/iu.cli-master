@@ -12,7 +12,7 @@ dart pub global activate -sgit https://github.com/dev-ideausher/iu.cli-master.gi
 ```
 After that, you need to set the Environmental path variable:
 
-for MacOS
+- for MacOS
 
 ```
 export PATH="$PATH:/Users/"yourpcname"/.pub-cache/bin"

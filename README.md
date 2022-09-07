@@ -3,7 +3,7 @@
 
 This is a Dart CLI used mainly in Flutter projects. It takes a separately made plugin as required, which can generate templates that could include any desired code in any specified directory location. So simple Right? 😃
 
-## Important Commands
+## Installation
 
 To get it activated run the below command :
 

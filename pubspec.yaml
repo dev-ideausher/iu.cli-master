@@ -8,7 +8,7 @@ executables:
   fast:
 
 environment:
-  sdk: '>=2.7.2 <3.0.0'
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   path: ^1.6.4

@@ -8,7 +8,7 @@ This is a Dart CLI used mainly in Flutter projects. It takes a separately made p
 To get it activated run the below command :
 
 ```
-dart pub global activate -sgit https://github.com/dev-ideausher/iu.cli-master.git
+dart pub global activate -sgit https://github.com/dev-ideausher/fast.cli
 ```
 After that, you need to set the Environmental path variable:
 
